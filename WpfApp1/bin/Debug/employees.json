@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "Name": "John Doe",
+    "Adress": "Kiev",
+    "DateOfBirth": "2023-08-07T13:52:26.3599582+03:00",
+    "Phone": "+38(099)999-99-99",
+    "Position": "Director",
+    "Status": "Уволен",
+    "Salary": 34000.0,
+    "Date_of_employment": "2023-08-07T13:52:26.3639562+03:00",
+    "Date_of_dismissal": "2023-01-01T00:00:00"
+  },
+  {
+    "Id": 2,
+    "Name": "Jane Smith",
+    "Adress": "Lviv",
+    "DateOfBirth": "2023-08-07T13:52:26.3649539+03:00",
+    "Phone": "+38(099)888-88-88",
+    "Position": "HR Manager",
+    "Status": "Работает",
+    "Salary": 24000.0,
+    "Date_of_employment": "2023-08-07T13:52:26.3649539+03:00",
+    "Date_of_dismissal": "0001-01-01T00:00:00"
+  },
+  {
+    "Id": 3,
+    "Name": "Bob Smith",
+    "Adress": "Odessa",
+    "DateOfBirth": "2023-08-07T13:52:26.3649539+03:00",
+    "Phone": "+38(099)888-88-88",
+    "Position": "HR Manager",
+    "Status": "Уволен",
+    "Salary": 24000.0,
+    "Date_of_employment": "2023-08-07T13:52:26.3649539+03:00",
+    "Date_of_dismissal": "2023-02-02T00:00:00"
+  }
+]

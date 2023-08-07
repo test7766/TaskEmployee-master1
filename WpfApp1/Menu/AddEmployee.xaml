@@ -1,0 +1,162 @@
+﻿<Window x:Class="WpfApp1.Crud.AddEmployee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Crud"
+        mc:Ignorable="d"
+        Title="Сотрудник" Height="420" Width="450">
+    
+
+
+
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Данние сотрудника" />
+        <Separator Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,2,-59,2" ></Separator>
+        
+        <Label Grid.Row="1" 
+               Grid.Column="0"
+              Margin="1,0,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center">Имя</Label>
+        <TextBox Grid.Row="1"
+                 Grid.Column="1"
+                 Height="Auto"
+                 Width="295"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 x:Name="txtName"></TextBox>
+        
+        <Label Grid.Row="2" 
+               Grid.Column="0"
+              Margin="1,0,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center">Адрес:</Label>
+        <TextBox Grid.Row="2"
+                 Grid.Column="1"
+                 Height="Auto"
+                 Width="295"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 x:Name="txtAdres"></TextBox>
+        
+       
+        <Label Grid.Row="3" 
+               Grid.Column="0"
+              Margin="1,0,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center">Дата рождения:</Label>
+        <DatePicker Grid.Row="3"
+                 Grid.Column="1"
+                 Height="Auto"
+                 Width="295"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                    x:Name="txtDate_of_birth"/>
+        
+        <Label Grid.Row="4" 
+               Grid.Column="0"
+              Margin="1,0,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center">Телефон:</Label>
+        <TextBox Grid.Row="4"
+                 Grid.Column="1"
+                 Height="Auto"
+                 Width="295"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 TextChanged="PhoneNumberTextBox_TextChanged"
+                 x:Name="txtPhone"/>
+        
+        
+        <Label Grid.Row="6" 
+               Grid.Column="0"
+              Margin="1,0,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center">Должность:</Label>
+        <TextBox Grid.Row="6"
+                 Grid.Column="1"
+                 Height="Auto"
+                 Width="295"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 x:Name="txtPosition"/>
+        
+        <Label Grid.Row="7" 
+               Grid.Column="0"
+              Margin="1,0,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center">Заплата:</Label>
+        <TextBox Grid.Row="7"
+                 Grid.Column="1"
+                 Height="Auto"
+                 Width="295"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 x:Name="txtSalary"/>
+        <Label Grid.Row="8" 
+               Grid.Column="0"
+              Margin="1,0,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center">Дата принятия:</Label>
+        <DatePicker Grid.Row="8"
+                 Grid.Column="1"
+                 Height="Auto"
+                 Width="295"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center" 
+                 x:Name="txtdate_of_employment"/>
+        <Label Grid.Row="9" 
+               Grid.Column="0"
+              Margin="1,0,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center">Дата увольнения:</Label>
+        <DatePicker Grid.Row="9"
+                 Grid.Column="1"
+                 Height="Auto"
+                 Width="295"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center" x:Name="txtdate_of_dismissal"/>
+
+
+
+
+
+
+        <Separator Grid.Row="9" Grid.ColumnSpan="2" Margin="0,16,11,14" Grid.RowSpan="2" />
+        <StackPanel Grid.Row="10" Grid.Column="1"  HorizontalAlignment="Right" Orientation="Horizontal">
+        <Button Content="OK"
+                Click="AddButton_Click"
+                Margin="10 10 -20 10"
+                Padding="3,3,3,3"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Width="52" />
+            
+        </StackPanel>
+
+      
+    </Grid>
+
+
+
+</Window>
